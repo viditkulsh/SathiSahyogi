@@ -1,0 +1,2 @@
+# SathiSahyogi
+Crowdfunding PLatform
