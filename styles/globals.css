@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .background {
-  background-color: #644df6;
+  background-color: #ffffff; /* Updated to white background color of the image */
 }
 
 .backgroundMain {
-  background-color: #1a1a1a;
+  background-color: #6db343; /* Updated to green color of tree leaves in the image */
 }
 
 .newColor {
-  color: #1a1a1a;
+  color: #000000; /* Updated to black text color in the image */
 }
 
 .coverLine {
   width: 100%;
   height: 2rem;
-  background-color: #fff;
+  background-color: #ffffff; /* Kept as white or can be changed depending on where it's used */
   position: absolute;
   bottom: -1.9rem;
   z-index: 3;
