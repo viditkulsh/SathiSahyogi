@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
             <div className="backgroundMain p-6 text-center">
                 <span>©2024 Copyright:  </span>
-                <a href="https://github.com/viditkulsh/SathiSahyogi" className="font-semibold">
+                <a href="https://tailwind-elements.com/" className="font-semibold">
                     SathiSahyogi
                 </a>
             </div>
