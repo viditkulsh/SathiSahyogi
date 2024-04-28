@@ -15,7 +15,9 @@ const Footer = () => {
     const usefullLink = [
         "Home",
         "About Us",
-        "https://github.com/viditkulsh/SathiSahyogi",
+        <a href="https://github.com/viditkulsh/SathiSahyogi" target="_blank" rel="noopener noreferrer">
+            SathiSahyogi Github
+        </a>,
     ];
 
     // Create a function to generate mailto links
