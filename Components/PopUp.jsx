@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const PupUp = ({ setOpenModel, donate, donateFunction, getDonations }) => {
+const PopUp = ({ setOpenModel, donate, donateFunction, getDonations }) => {
   const [amount, setAmount] = useState("");
   const [allDonationData, setAllDonationData] = useState([]);
 
@@ -80,4 +80,4 @@ const PupUp = ({ setOpenModel, donate, donateFunction, getDonations }) => {
   );
 };
 
-export default PupUp;
+export default PopUp;

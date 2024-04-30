@@ -9,15 +9,19 @@ const Footer = () => {
 
     const contactList = [
         "viditkul08@gmail.com",
-        "certainlysohail@gmail.com  ",
+        "certainlysohail@gmail.com",
     ];
 
-    const usefullLink = [
-        "Home",
+    const usefulLink = [
         "About Us",
-        <a href="https://github.com/viditkulsh/SathiSahyogi" target="_blank" rel="noopener noreferrer">
-            SathiSahyogi Github
-        </a>,
+        {
+            label: "SathiSahyogi LinkedIn Post",
+            href: "https://www.linkedin.com/posts/sohail-khan-50b43129b_sathisahyogi-crowdfunding-blockchain-activity-7190963918805061632-6igB?utm_source=share&utm_medium=member_desktop",
+        },
+        {
+            label: "SathiSahyogi Github",
+            href: "https://github.com/viditkulsh/SathiSahyogi",
+        },
     ];
 
     // Create a function to generate mailto links
@@ -55,9 +59,13 @@ const Footer = () => {
                         <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
                             Useful links
                         </h6>
-                        {usefullLink.map((el, i) => (
+                        {usefulLink.map((el, i) => (
                             <p className="mb-4" key={i + 1}>
-                                <a href={el.startsWith("http") ? el : "#!"}>{el}</a>
+                                {typeof el === "string" ? (
+                                    <a href="#!">{el}</a>
+                                ) : (
+                                    <a href={el.href} target="_blank" rel="noopener noreferrer">{el.label}</a>
+                                )}
                             </p>
                         ))}
                     </div>
